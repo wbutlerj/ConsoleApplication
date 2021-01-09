@@ -20,7 +20,7 @@ namespace ConsoleApplication
             var currentDate = DateTime.Now;
             Console.WriteLine("The current date is " + currentDate.ToString("d"));
             //5 number of days until christmas
-            var day =  (currentDate.DayOfYear - 359) * -1;
+            var day =  (359 - currentDate.DayOfYear );
             Console.WriteLine("There are " + day.ToString("d") + " days until Christmas! (If you see a negative number then Christmas has already passed this year.)");
             
             //6
